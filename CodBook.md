@@ -1,14 +1,15 @@
-# This is a CodeBook for R Data Cleaning 
+# CodeBook.md
+This is a CodeBook for R Data Cleaning 
 ## Data location
 The full description of the original data is located at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 and http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names. 
 
 ## Additional transformations
-There was no additional transformations in the RunAnalysis.R script, except creating an additional summary file, which shows average for each feature across all Scticity-Subject pairs.
-Note that the feature names in the original were not unique, so for the data frame they were prefixed by the auto-generated name V<i>.
+There were no additional transformations in the RunAnalysis.R script, except creating an additional summary file, which shows average for each feature across all Activity-Subject pairs.
+Note that the feature names in the original were not unique, so for the data frame they were prefixed by the auto-generated name Vi.
 
 ## Original codebook notes from the data publisher
-Here are notes, copied here from the dataset ZIP file:
+Here are the main notes, copied here from the dataset ZIP file:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
